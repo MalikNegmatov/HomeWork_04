@@ -87,18 +87,29 @@ public class Main {
         year = 2024;
         task3_1(year);
     }
+    public static int task4_1(int distance) {
+
+        if (distance < 20) {return 1;
+        }   else if (distance <60) {
+            return 2;
+        }   else {
+            return 3;
+        }
+    }
     public static void task4 () {
         System.out.println("\nЗадача №4");
         // Пишем код для задачи 3
 
         int deliveryDistance = 95;
-        int deliveryDays;
-        if (deliveryDistance < 20) {deliveryDays = 1;
-        }   else if (deliveryDistance >=20 && deliveryDistance <60) {
-            deliveryDays = 2;
-        }   else {
-            deliveryDays = 3;
-        }
+        int deliveryDays = task4_1(deliveryDistance);
+        System.out.println("Потребуется дней:" + deliveryDays);
+
+        deliveryDistance = 20;
+        deliveryDays = task4_1(deliveryDistance);
+        System.out.println("Потребуется дней:" + deliveryDays);
+
+        deliveryDistance = 8;
+        deliveryDays = task4_1(deliveryDistance);
         System.out.println("Потребуется дней:" + deliveryDays);
     }
 
