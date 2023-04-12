@@ -62,11 +62,28 @@ public class Main {
         clientDeviceYear = 2014;
         task2_1(clientOS, clientDeviceYear);
         }
-    public static void task3_1 () {
+    public static void task3_1 (int year) {
+
+        if (year % 4 != 0) {
+            System.out.println(year + " год не является високосным.");
+        }   else if (year % 100 == 0 && year % 400 != 0) {
+            System.out.println(year + " год не является високосным.");
+        }   else if (year % 400 == 0) {
+            System.out.println(year + " год является високосным.");
+        }   else {
+            System.out.println(year + " год является високосным.");
+        }
     }
     public static void task3 () {
         System.out.println("\nЗадача №3");
-        // Пишем код для задачи 2
-        task3_1();
+        // Пишем код для задачи 3
+        int year = 2000;
+        task3_1(year);
+        year = 1900;
+        task3_1(year);
+        year = 2023;
+        task3_1(year);
+        year = 2024;
+        task3_1(year);
     }
 }
