@@ -4,6 +4,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
              }
 
     public static void task1_1 (byte osVersion) {
@@ -86,4 +87,20 @@ public class Main {
         year = 2024;
         task3_1(year);
     }
+    public static void task4 () {
+        System.out.println("\nЗадача №4");
+        // Пишем код для задачи 3
+
+        int deliveryDistance = 95;
+        int deliveryDays;
+        if (deliveryDistance < 20) {deliveryDays = 1;
+        }   else if (deliveryDistance >=20 && deliveryDistance <60) {
+            deliveryDays = 2;
+        }   else {
+            deliveryDays = 3;
+        }
+        System.out.println("Потребуется дней:" + deliveryDays);
+    }
+
+
 }
