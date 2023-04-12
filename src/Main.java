@@ -19,8 +19,11 @@ public class Main {
     public static void task1 () {
         System.out.println("Задача №1");
         // Пишем код для задачи 1
-        task1_1((byte) 1);
-        task1_1((byte) 0);
+        byte clientOS = 0;
+        task1_1(clientOS);
+
+        clientOS = 1;
+        task1_1(clientOS);
     }
 
     public static void task2_1 () {
