@@ -5,6 +5,7 @@ public class Main {
         task2();
         task3();
         task4();
+        task5();
              }
 
     public static void task1_1 (byte osVersion) {
@@ -102,16 +103,74 @@ public class Main {
 
         int deliveryDistance = 95;
         int deliveryDays = task4_1(deliveryDistance);
-        System.out.println("Потребуется дней:" + deliveryDays);
+        System.out.println("Потребуется дней: " + deliveryDays);
 
         deliveryDistance = 20;
         deliveryDays = task4_1(deliveryDistance);
-        System.out.println("Потребуется дней:" + deliveryDays);
+        System.out.println("Потребуется дней: " + deliveryDays);
 
         deliveryDistance = 8;
         deliveryDays = task4_1(deliveryDistance);
-        System.out.println("Потребуется дней:" + deliveryDays);
+        System.out.println("Потребуется дней: " + deliveryDays);
     }
 
+    public static void task5_1 (int month) {
+
+        if (month > 12 || month < 1) {
+            System.out.println("В году только 12 месяцев. Задайте месяц в диапазоне чисел от 1 до 12.");
+        }   else {
+            switch (month) {
+                case 1:
+                    System.out.println("Ваш месяц январь. Сезон Зима.");
+                    break;
+                case 2:
+                    System.out.println("Ваш месяц февраль. Сезон Зима.");
+                    break;
+                case 3:
+                    System.out.println("Ваш месяц март. Сезон Весна.");
+                    break;
+                case 4:
+                    System.out.println("Ваш месяц апрель. Сезон Весна.");
+                    break;
+                case 5:
+                    System.out.println("Ваш месяц май. Сезон Весна.");
+                    break;
+                case 6:
+                    System.out.println("Ваш месяц июнь. Сезон Лето.");
+                    break;
+                case 7:
+                    System.out.println("Ваш месяц июль. Сезон Лето.");
+                    break;
+                case 8:
+                    System.out.println("Ваш месяц август. Сезон Лето.");
+                    break;
+                case 9:
+                    System.out.println("Ваш месяц сентябрь. Сезон Осень.");
+                    break;
+                case 10:
+                    System.out.println("Ваш месяц октябрь. Сезон Осень.");
+                    break;
+                case 11:
+                    System.out.println("Ваш месяц ноябрь. Сезон Осень.");
+                    break;
+                case 12:
+                    System.out.println("Ваш месяц октябрь. Сезон Зима.");
+                    break;
+            }
+        }
+    }
+    public static void task5 () {
+        System.out.println("\nЗадача №5");
+        // Пишем код для задачи 5
+
+        int month = 1;
+        task5_1(month);
+
+        month = 9;
+        task5_1(month);
+
+        month = 14;
+        task5_1(month);
+    }
 
 }
